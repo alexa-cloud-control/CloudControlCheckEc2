@@ -79,7 +79,7 @@ jobs:
           skip_cleanup: true
 
         - provider: lambda
-          function_name: "cloud_control_terminate_ec2"
+          function_name: "cloud_control_check_ec2"
           region: "${terraform_region}"
           role: "arn:aws:iam::${account_number}:role/LambdaAlexaCloudControlCheckEc2IamRole"
           runtime: "python3.6"
