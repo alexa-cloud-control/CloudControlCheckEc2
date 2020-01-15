@@ -39,7 +39,7 @@ jobs:
       script:
         - sonar-scanner
 
-   - stage: Perform tests
+    - stage: Perform tests
       script:
         - sed -i -e "s/ACCOUNTNUMBER/${account_number}/g" Alexa-CC-CheckEc2.yml
         - sed -i -e "s/CONTEXTTABLE/${dynamodb_context}/g" Alexa-CC-CheckEc2.yml
